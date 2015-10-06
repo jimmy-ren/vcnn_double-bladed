@@ -30,5 +30,5 @@ The 29th AAAI Conference on Artificial Intelligence (<b>AAAI-15</b>). Austin, Te
 1. Li Xu, Jimmy SJ. Ren, Ce Liu, Jiaya Jia, "[Deep Convolutional Neural Network for Image Deconvolution](http://papers.nips.cc/paper/5485-deep-convolutional-neural-network-for-image-deconvolution.pdf)", Advances in Neural Information Processing Systems (<b>NIPS 2014</b>).<br>
 2. Li Xu, Jimmy SJ. Ren, Qiong Yan, Renjie Liao, Jiaya Jia, "[Deep Edge-Aware Filters](http://jmlr.org/proceedings/papers/v37/xub15.html)", The 32nd International Conference on Machine Learning (<b>ICML 2015</b>).<br>
 3. Yongtao Hu, Jimmy SJ. Ren, Jingwen Dai, Chang Yuan, Li Xu, Wenping Wang, "[Deep Multimodal Speaker Naming](http://herohuyongtao.github.io/research/publications/speaker-naming/)", The 23rd ACM International Conference on Multimedia (<b>MM 2015</b>).<br>
-
+4. Jimmy SJ. Ren, Li Xu, Qiong Yan, Wenxiu Sun, "Shepard Convolutional Neural Networks", Advances in Neural Information Processing Systems (NIPS 2015).<br>
 
