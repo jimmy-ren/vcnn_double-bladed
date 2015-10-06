@@ -1,7 +1,7 @@
-function numgrad = computeNumericalGradient_with_mask(image, mask, label, weight_idx)
+function numgrad = computeNumericalGradient_with_mask(image, mask_li, label, weight_idx)
     global config mem;
     estimatedGrad = mem.grads;
-    epsilon = config.NEW_MEM(0.001);
+    epsilon = config.NEW_MEM(0.01);
     % Initialize numgrad with zeros
     numgrad = zeros(size(config.weights{weight_idx}));
     %{
@@ -26,10 +26,10 @@ function numgrad = computeNumericalGradient_with_mask(image, mask, label, weight
     for x = 1:size(config.weights{weight_idx}, 1)
         for y = 1:size(config.weights{weight_idx}, 2)
             config.weights{weight_idx}(x, y) = config.weights{weight_idx}(x, y) + epsilon;
-            op_train_pipe_with_mask(image, mask, label);
+            op_train_pipe_with_mask(image, mask_li, label);
             cost1 = config.cost;
             config.weights{weight_idx}(x, y) = config.weights{weight_idx}(x, y)  - (2*epsilon);
-            op_train_pipe_with_mask(image, mask, label);
+            op_train_pipe_with_mask(image, mask_li, label);
             cost2 = config.cost;
             config.weights{weight_idx}(x, y) = config.weights{weight_idx}(x, y) + epsilon;
             
