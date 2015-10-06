@@ -60,7 +60,7 @@ function init(flag)
             conv_layer_c = conv_layer_c + 1;
             config.feature_map_sizes{idx} = [config.input_size(1)-config.kernel_size(1,1)+1 config.input_size(2)-config.kernel_size(1,2)+1 ...
                                              config.conv_hidden_size(conv_layer_c)];
-            config.misc.mask_type = 16;     % hard code here for now
+            %config.misc.mask_type = 16;     % hard code here for now
             %config.misc.mask_type = 4;
             if strcmp(config.forward_pass_scheme{idx}, 'conv_v_sr')
                 config.weights{idx} = {};
@@ -343,8 +343,11 @@ function init(flag)
         config.pipeline_backprop{length(config.pipeline_backprop)+1} = @convBconv_last;
     end
     if strcmp(config.forward_pass_scheme{1}, 'conv_v_mask_norm')
-        config.pipeline_backprop{length(config.pipeline_backprop)+1} = @convBinput_with_mask_accel;
-        %config.pipeline_backprop{length(config.pipeline_backprop)+1} = @convBinput_with_mask;
+        if strcmp(config.mask_for_SR, 'true')
+            config.pipeline_backprop{length(config.pipeline_backprop)+1} = @convBinput_with_mask_accel;
+        else
+            config.pipeline_backprop{length(config.pipeline_backprop)+1} = @convBinput_with_mask;
+        end
     elseif strcmp(config.forward_pass_scheme{1}, 'conv_v_sr')
         config.pipeline_backprop{length(config.pipeline_backprop)+1} = @convBinput_SR;
     else
