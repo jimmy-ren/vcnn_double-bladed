@@ -1,0 +1,1 @@
+This folder is to put the training data
