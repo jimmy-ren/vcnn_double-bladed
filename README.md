@@ -1,5 +1,5 @@
 # VCNN - Double-Bladed Sword
-GPU enabled Vectorized implementation of convolutional neural networks (CNN) in <b>Matlab</b> for both visual recognition and image processing. It's a unified framework for both high level and low level computer vision tasks.
+GPU enabled vectorized implementation of convolutional neural networks (CNN) in <b>Matlab</b> for both visual recognition and image processing. It's a unified framework for both high level and low level computer vision tasks.
 
 ## How to use it
 You can <b>directly</b> try the demos without referring to any materials in the [project website](http://vcnn.deeplearning.cc). <br>
