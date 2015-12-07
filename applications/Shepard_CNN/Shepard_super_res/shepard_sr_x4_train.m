@@ -1,3 +1,9 @@
+%--------------------------------------------------------------------------------------------------------
+% The system is created based on the principles described in the following paper
+% Jimmy SJ. Ren, Li Xu, Qiong Yan, Wenxiu Sun, "Shepard Convolutional Neural Networks", 
+% Advances in Neural Information Processing Systems (NIPS 2015)
+% email: jimmy.sj.ren@gmail.com
+%--------------------------------------------------------------------------------------------------------
 addpath applications/Shepard_CNN/Shepard_super_res/
 addpath utils/
 addpath cuda/
