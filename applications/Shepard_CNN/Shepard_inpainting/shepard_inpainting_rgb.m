@@ -5,6 +5,7 @@
 % email: jimmy.sj.ren@gmail.com
 %--------------------------------------------------------------------------------------------------------
 addpath applications/Shepard_CNN/
+addpath applications/Shepard_CNN/utility/
 addpath applications/Shepard_CNN/Shepard_inpainting/imgs/
 addpath applications/Shepard_CNN/Shepard_inpainting/results/
 addpath applications/image_denoise/utility/
