@@ -1,5 +1,6 @@
 # Shepard Convolutional Neural Networks
-Before run the code, it's a good idea to read the instructions and see the videos on the VCNN website ([www.deeplearning.cc/vcnn](http://www.deeplearning.cc/vcnn)) and setup VCNN. The code runs in both Ubuntu 14.04 and Windows 7.
+Before run the code, it's a good idea to read the instructions and see the videos on the VCNN website ([www.deeplearning.cc/vcnn](http://www.deeplearning.cc/vcnn)) and setup VCNN. <br>
+You need to have a Nvidia GPU with 4GB or more GPU memory to run the code. The code runs directly in Matlab 2014b or later. You need to install CUDA before running the code. No other compilation or configuration is needed. The code was tested in both Ubuntu 14.04 and Windows 7. <br>
 
 ## Paper
 Jimmy SJ. Ren, Li Xu, Qiong Yan, Wenxiu Sun, "[Shepard Convolutional Neural Networks](http://papers.nips.cc/paper/5774-shepard-convolutional-neural-networks.pdf)", Advances in Neural Information Processing Systems (NIPS 2015)
@@ -38,8 +39,11 @@ Bicubic VS. Shepard CNN <br>
 ![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/ppt3_bicubic_x2.png)  ![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/ppt3_shcnn_x2.png) <br>
 Bicubic VS. Shepard CNN <br>
 
-
-
 ## Inpainting
+To run examples of inpainting just run this [script](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_inpainting/shepard_inpainting_rgb.m). <br>
 
+<b>See a few examples for image inpainting.</b> <br>
+![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/inpaint1.png)  <br>
+
+![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/inpaint2.png)  
 
