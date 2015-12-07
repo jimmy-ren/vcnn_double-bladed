@@ -30,8 +30,8 @@ if(size(I,3) == 3)
     I = rgb2ycbcr(I);
 end
 
-I = modcrop(I, 4);
-I = padarray(I, [4 4], 'replicate');
+I = modcrop(I, 3);
+I = padarray(I, [3 3], 'replicate');
 
 % downsample the image
 D3chs = imresize(I, [size(I,1)/3 size(I,2)/3], 'bicubic');
