@@ -25,7 +25,7 @@ global config;
 I = im2double(imread('applications/Shepard_CNN/Shepard_super_res/images/Set5/butterfly_GT.bmp'));
 % set 14
 % -- baboon barbara bridge coastguard comic face flowers foreman lenna man monarch pepper ppt3 zebra
-%I = im2double(imread('applications/Shepard_CNN/Shepard_super_res/images/Set14/pepper.bmp'));
+I = im2double(imread('applications/Shepard_CNN/Shepard_super_res/images/Set14/ppt3.bmp'));
 if(size(I,3) == 3)
     I = rgb2ycbcr(I);
 end
