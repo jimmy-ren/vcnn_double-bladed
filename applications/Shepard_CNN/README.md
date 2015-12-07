@@ -23,6 +23,23 @@ To train a new model, run this [script](https://github.com/jimmy-ren/vcnn_double
 
 Once the data is ready, you may run this [script](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/shepard_sr_x2_train.m) to train a x2 super-resolution model. This [script](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/shepard_sr_x3_train.m) for x3 super-resolution model. This [script](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/shepard_sr_x4_train.m) for x4 super-resolution model.
 
+<b>See a few examples for color super-resolution.</b> <br>
+<b>x4 super-resolution</b> <br>
+![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/butterfly_bicubic_x4.png)  ![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/butterfly_shcnn_x4.png) <br>
+Bicubic VS. Shepard CNN <br>
+![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/flowers_bicubic_x4.png)  ![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/flowers_shcnn_x4.png) <br>
+Bicubic VS. Shepard CNN <br>
+
+<b>x3 super-resolution</b> <br>
+![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/comic_bicubic_x3.png)  ![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/comic_shcnn_x3.png) <br>
+Bicubic VS. Shepard CNN <br>
+
+<b>x2 super-resolution</b> <br>
+![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/ppt3_bicubic_x2.png)  ![](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/images/web/ppt3_shcnn_x2.png) <br>
+Bicubic VS. Shepard CNN <br>
+
+
+
 ## Inpainting
 
 
