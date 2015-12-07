@@ -1,5 +1,5 @@
 # Shepard Convolutional Neural Networks
-Before run the code, it's a good idea to read the instructions and see the videos on the VCNN website ([www.deeplearning.cc/vcnn](http://www.deeplearning.cc/vcnn)) and setup VCNN. <br>
+Before running the code, it's a good idea to read the instructions and see the videos on the VCNN website ([www.deeplearning.cc/vcnn](http://www.deeplearning.cc/vcnn)) and setup VCNN. <br>
 You need to have a Nvidia GPU with 4GB or more GPU memory to run the code. The code runs directly in Matlab 2014b or later. You need to install CUDA before running the code. No other compilation or configuration is needed. The code was tested in both Ubuntu 14.04 and Windows 7. <br>
 
 ## Paper
@@ -20,7 +20,7 @@ Please run this [script](https://github.com/jimmy-ren/vcnn_double-bladed/blob/ma
 Please run this [script](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/color_super_res/color_shepard_sr_x4_demo.m) to test 4x color image super-resolution. <br>
 <br>
 
-To train a new model, run this [script](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/data/Shepard_CNN/Shepard_super_res/gen_training_data.m) to generate the data. You adjust the variable "down_factor" to indicate whether you would like to generate data for x2, x3 or x4 super-resolution. Also adjust the variable "training_mat_path" and "val_mat_path" to indicate the path to store the training and validation data. <br>
+To train a new model, run this [script](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/data/Shepard_CNN/Shepard_super_res/gen_training_data.m) to generate the data. You can adjust the variable "down_factor" to indicate whether you would like to generate data for x2, x3 or x4 super-resolution. Also adjust the variable "training_mat_path" and "val_mat_path" to indicate the path to store the training and validation data. <br>
 
 Once the data is ready, you may run this [script](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/shepard_sr_x2_train.m) to train a x2 super-resolution model. This [script](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/shepard_sr_x3_train.m) for x3 super-resolution model. This [script](https://github.com/jimmy-ren/vcnn_double-bladed/blob/master/applications/Shepard_CNN/Shepard_super_res/shepard_sr_x4_train.m) for x4 super-resolution model.
 
