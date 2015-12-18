@@ -24,8 +24,8 @@ init(0);
 
 load('data/Shepard_CNN/Shepard_super_res/x3/val_1ch/val_1');
 
-%images_t = reshape(images_t, size(images_t,1), size(images_t,2), 1, size(images_t,3));
-%labels_t = reshape(labels_t, size(labels_t,1), size(labels_t,2), 1, size(labels_t,3));
+images_t = reshape(images_t, size(images_t,1), size(images_t,2), 1, size(images_t,3));
+labels_t = reshape(labels_t, size(labels_t,1), size(labels_t,2), 1, size(labels_t,3));
 
 perm = randperm(size(images_t, 4));
 images_t = images_t(:,:,:,perm);
@@ -49,8 +49,8 @@ for pass = 1:50
     for p = 1:50
         load(strcat('data/Shepard_CNN/Shepard_super_res/x3/train_1ch/patches_', num2str(p), '.mat'));
         
-        %images = reshape(images, size(images,1), size(images,2), 1, size(images,3));
-        %labels = reshape(labels, size(labels,1), size(labels,2), 1, size(labels,3));
+        images = reshape(images, size(images,1), size(images,2), 1, size(images,3));
+        labels = reshape(labels, size(labels,1), size(labels,2), 1, size(labels,3));
         
         perm = randperm(20000);
         images = images(:,:,:,perm);
