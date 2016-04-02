@@ -8,8 +8,8 @@ function conv2out_mem()
     counts = ones(size(idx));
     counts = reshape(accumarray(idx(:), counts(:)), config.output_size(1), config.output_size(2));
     mem.one_over_add_counts = config.NEW_MEM(1 ./ counts);
-    mem.gen_out_matrix = config.NEW_MEM(zeros(size(idx, 1)*config.chs, size(idx, 2)));
-    for m = 1:config.chs
+    mem.gen_out_matrix = config.NEW_MEM(zeros(size(idx, 1)*config.output_size(3), size(idx, 2)));
+    for m = 1:config.output_size(3)%config.chs
         mem.gen_out_matrix((m-1)*size(idx, 1)+1:m*size(idx, 1), :) = idx + ((m-1)*max(max(idx)));
     end
     
